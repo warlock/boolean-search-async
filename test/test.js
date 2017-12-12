@@ -2,16 +2,10 @@ require("./lint")
 require("./basic")
 require("./andSimple")
 require("./orSimple")
+require('./mixMultiple')
 
 /*
 require("./andMultiple")
-
-// OR SEARCH
 require("./orMultiple")
-
-// MIX SEARCH
 require('./mixMultiple')
 */
-require('./mixMultiple')
-
-
