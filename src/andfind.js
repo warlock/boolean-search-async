@@ -4,7 +4,6 @@ module.exports = (text, andarr, callback) => {
     if (text.indexOf(` ${el} `) > -1) next(el)
     else next()
   }, res => {
-    console.log("ANDFIND: " + JSON.stringify(res))
     callback(res)
   })
 }

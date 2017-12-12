@@ -11,7 +11,6 @@ describe('* Search with AND and OR conditions', () => {
 
     it('Check results', done => {
       bSearch(text, search, {}, res => {
-        console.log(JSON.stringify(res))
         assert.strictEqual(res.res, true) // Result
         assert.strictEqual(res.search, search) // Found word
         assert.strictEqual(res.des.length, 1)
@@ -41,7 +40,6 @@ describe('=== Search without quotes and no found first single descriptor and nee
   it('Check results', done => {
       
     bSearch(text, search, {}, res => {
-      console.log(JSON.stringify(res))
       assert.strictEqual(res.res, true)
       assert.strictEqual(res.search, search)
       assert.strictEqual(res.des.length, 2)

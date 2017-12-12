@@ -17,9 +17,7 @@ module.exports = (text, search, options, callback) => {
     } else {
       if (boolres.length > 1) {
         snc.each(boolres, (el, idx, next, end) => {
-          console.log(JSON.stringify(el))
           andfind(cleantext, el, res => {
-            console.log('aqui' + JSON.stringify(res))
             if (res.length > 0) end({ res: true, search: search, des: res })
             else next()
           })
